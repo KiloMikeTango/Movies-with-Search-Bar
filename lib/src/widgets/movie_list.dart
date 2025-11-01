@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/movie_model.dart';
+import '../screens/about_movie.dart';
 
 class MovieList extends StatelessWidget {
   final List<Movie> movie;
@@ -18,6 +19,20 @@ class MovieList extends StatelessWidget {
               child: ListTile(
                 title: Text(movie[index].name!),
                 leading: Image.asset(movie[index].movieImage!),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AboutMovie(
+                      
+                        appBarTitle: movie[index].name,
+                        movieImage: movie[index].movieImage!,
+                        description: movie[index].description!,
+
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
             Divider(),
