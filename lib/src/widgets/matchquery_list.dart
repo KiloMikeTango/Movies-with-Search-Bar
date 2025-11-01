@@ -1,5 +1,7 @@
 // matchquery_list.dart (FIXED)
 import 'package:flutter/material.dart';
+import 'package:movie_with_searchbar/src/data/movies.dart';
+import 'movie_list.dart';
 import '../services/search_service.dart';
 import 'package:movie_with_searchbar/src/models/movie_model.dart'; // Keep this for type safety
 
@@ -28,7 +30,8 @@ class _MatchQueryListState extends State<MatchQueryList> {
       builder: (context, snapshot) {
         // Handle loading/initial state
         if (!snapshot.hasData) {
-          return const Center(child: CircularProgressIndicator());
+          final movies = moviesList;
+          return MovieList(movie: movies);
         }
 
         final List<Movie> filteredMovies = snapshot.data!;
@@ -39,13 +42,7 @@ class _MatchQueryListState extends State<MatchQueryList> {
         }
 
         // 3. Build the list from the stream data
-        return ListView.builder(
-          itemCount: filteredMovies.length,
-          itemBuilder: (context, index) {
-            final movie = filteredMovies[index];
-            return ListTile(title: Text(movie.name!));
-          },
-        );
+        return MovieList(movie: filteredMovies);
       },
     );
   }

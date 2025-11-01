@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_with_searchbar/src/data/movies.dart';
+import 'package:movie_with_searchbar/src/models/movie_model.dart';
 import 'package:movie_with_searchbar/src/widgets/search_field.dart';
 import '../widgets/movie_list.dart';
 import '../services/search_service.dart';
@@ -27,6 +28,7 @@ class _MovieScreenState extends State<MovieScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed: () {}),
       appBar: AppBar(
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,

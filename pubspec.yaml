@@ -1,5 +1,5 @@
 name: movie_with_searchbar
-description: "A new Flutter project."
+description: "An offline movie app with search bar."
 publish_to: 'none'
 version: 0.1.0
 
@@ -16,4 +16,11 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
+  assets:
+    - lib/src/assets/movies/mov1.jpg
+    - lib/src/assets/movies/mov2.jpg
+    - lib/src/assets/movies/mov3.jpg
+    - lib/src/assets/movies/mov4.jpg
+    - lib/src/assets/movies/mov5.jpg
+    - lib/src/assets/movies/mov6.jpg
   uses-material-design: true
