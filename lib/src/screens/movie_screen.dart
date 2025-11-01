@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_with_searchbar/src/screens/data/movies.dart';
+import 'package:movie_with_searchbar/src/data/movies.dart';
 import 'package:movie_with_searchbar/src/widgets/search_field.dart';
 import '../widgets/movie_list.dart';
 import '../services/search_service.dart';

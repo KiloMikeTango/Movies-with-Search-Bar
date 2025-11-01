@@ -1,17 +1,17 @@
-import 'package:flutter/material.dart';
-import '../screens/data/movies.dart';
+// import 'package:flutter/material.dart';
+// import '../data/movies.dart';
 
-class MovieList extends StatelessWidget {
-  const MovieList({super.key});
+// class MovieList extends StatelessWidget {
+//   const MovieList({super.key});
 
-  @override
-  Widget build(BuildContext context) {
+//   @override
+//   Widget build(BuildContext context) {
     
-    return ListView.builder(
-     itemCount: moviesList.length,
-      itemBuilder: (context, index) {
-        return ListTile(title: Text(moviesList[index]));
-      },
-    );
-  }
-}
+//     return ListView.builder(
+//      itemCount: moviesList.length,
+//       itemBuilder: (context, index) {
+//         return ListTile(title: Text(moviesList[index]));
+//       },
+//     );
+//   }
+// }
