@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_with_searchbar/src/widgets/search_field.dart';
 import '../services/search_service.dart';
 import '../widgets/matchquery_list.dart';
+import '../widgets/movie_drawer.dart';
 
 class MovieScreen extends StatefulWidget {
   const MovieScreen({super.key});
@@ -25,17 +26,15 @@ class _MovieScreenState extends State<MovieScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(onPressed: () {}),
+      drawer: MovieDrawer(),
       appBar: AppBar(
-       
         centerTitle: true,
-
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             SizedBox(
-              width: 250,
+              width: 220,
               height: 40,
               child: SearchField(
                 searchFocusNode: _searchFocusNode,

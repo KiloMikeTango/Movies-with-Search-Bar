@@ -9,8 +9,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: MovieTheme.lightTheme,
-      darkTheme: ThemeData.dark(),
-      themeMode: ThemeMode.light,
+      darkTheme: MovieTheme.darkTheme,
+      themeMode: ThemeMode.dark,
       home: MovieScreen(),
     );
   }

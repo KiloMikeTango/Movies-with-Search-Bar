@@ -26,10 +26,15 @@ class AboutMovie extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 20),
-              child: Image.asset(movieImage!),
+              child: Image.asset(movieImage!, width: 200, height: 200),
             ),
             Padding(
-              padding: const EdgeInsets.only(left:25.0, right: 25, top: 20, bottom: 17),
+              padding: const EdgeInsets.only(
+                left: 25.0,
+                right: 25,
+                top: 20,
+                bottom: 17,
+              ),
               child: Text(description!),
             ),
           ],

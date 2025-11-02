@@ -17,18 +17,20 @@ class MovieList extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
 
               child: ListTile(
-                title: Text(movie[index].name!),
+                title: Text(
+                  movie[index].name!,
+                  style: Theme.of(context).textTheme.titleSmall,
+                  
+                ),
                 leading: Image.asset(movie[index].movieImage!),
                 onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => AboutMovie(
-                      
                         appBarTitle: movie[index].name,
                         movieImage: movie[index].movieImage!,
                         description: movie[index].description!,
-
                       ),
                     ),
                   );

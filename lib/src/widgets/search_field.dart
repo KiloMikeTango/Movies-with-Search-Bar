@@ -13,6 +13,7 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      style: TextStyle(color: Theme.of(context).primaryColorDark),
       onChanged: (query) => searchQuery.updateSearchQuery(query),
       textAlignVertical: TextAlignVertical.bottom,
       focusNode: searchFocusNode,
