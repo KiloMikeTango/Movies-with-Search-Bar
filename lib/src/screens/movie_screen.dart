@@ -27,8 +27,7 @@ class _MovieScreenState extends State<MovieScreen> {
     return Scaffold(
       floatingActionButton: FloatingActionButton(onPressed: () {}),
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
+       
         centerTitle: true,
 
         title: Row(

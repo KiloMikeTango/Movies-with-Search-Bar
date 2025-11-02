@@ -24,9 +24,12 @@ class AboutMovie extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset(movieImage!),
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.only(top: 20),
+              child: Image.asset(movieImage!),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left:25.0, right: 25, top: 20, bottom: 17),
               child: Text(description!),
             ),
           ],
