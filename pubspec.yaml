@@ -17,10 +17,6 @@ dev_dependencies:
 
 flutter:
   assets:
-    - lib/src/assets/movies/mov1.jpg
-    - lib/src/assets/movies/mov2.jpg
-    - lib/src/assets/movies/mov3.jpg
-    - lib/src/assets/movies/mov4.jpg
-    - lib/src/assets/movies/mov5.jpg
-    - lib/src/assets/movies/mov6.jpg
+    - lib/src/assets/movies/.
+  
   uses-material-design: true
