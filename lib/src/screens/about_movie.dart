@@ -21,10 +21,17 @@ class AboutMovie extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Column(children: [Padding(
-        padding: const EdgeInsets.all(15.0),
-        child: Text(description!),
-      )]),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Image.asset(movieImage!),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text(description!),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

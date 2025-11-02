@@ -37,7 +37,7 @@ List<Movie> _movies = [
     name: 'Squid Game',
     movieImage: '$imageDir/mov6.jpg',
     description:
-        """Hundreds of deeply indebted people are invited to compete in a series of children's games for a massive cash prize. The catch? The penalty for losing is death. This gripping survival drama is a brutal, suspenseful critique of wealth inequality that pits human brutal, suspenseful critique of wealth inequality that pits human""",
+        """Hundreds of deeply indebted people are invited to compete in a series of children's games for a massive cash prize. The catch? The penalty for losing is death. This gripping survival drama is a brutal, suspenseful critique of wealth inequality that pits human brutal, suspenseful critique of wealth inequality that pits human desperation against devastating consequences.""",
   ),
 ];
 
