@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 
 class MovieTheme {
   static final ThemeData lightTheme = ThemeData(
-    cardTheme: CardThemeData(color: Colors.white),
+    switchTheme: SwitchThemeData(
+      thumbColor: MaterialStateProperty.all<Color?>(Colors.white),
+      trackColor: MaterialStateProperty.all<Color?>(Colors.grey.shade400),
+      trackOutlineColor: MaterialStateProperty.all<Color?>(Colors.grey.shade400),
+    ),
+    cardTheme: CardThemeData(color: Colors.white,),
     highlightColor: Colors.transparent,
     splashColor: Colors.transparent,
     brightness: Brightness.light,
@@ -33,7 +38,7 @@ class MovieTheme {
       thumbColor: MaterialStateProperty.all<Color?>(Colors.white),
       trackColor: MaterialStateProperty.all<Color?>(Colors.green),
     ),
-    cardTheme: CardThemeData(color: Colors.grey.shade900),
+    cardTheme: CardThemeData(color: Colors.grey.shade900, shadowColor: Colors.blueGrey),
     highlightColor: Colors.transparent,
     splashColor: Colors.transparent,
     brightness: Brightness.dark,
