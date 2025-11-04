@@ -2,11 +2,14 @@ import 'package:flutter/material.dart';
 
 class MovieTheme {
   static final ThemeData lightTheme = ThemeData(
+    cardTheme: CardThemeData(color: Colors.white),
+    highlightColor: Colors.transparent,
+    splashColor: Colors.transparent,
     brightness: Brightness.light,
     primaryColor: Colors.red.shade600,
     scaffoldBackgroundColor: Colors.white,
- //Searchbar text color
-   primaryColorDark: Colors.black,
+    //Searchbar text color
+    primaryColorDark: Colors.black,
     textTheme: TextTheme(
       titleSmall: TextStyle(
         color: Colors.black,
@@ -26,10 +29,17 @@ class MovieTheme {
   );
 
   static final ThemeData darkTheme = ThemeData(
+    switchTheme: SwitchThemeData(
+      thumbColor: MaterialStateProperty.all<Color?>(Colors.white),
+      trackColor: MaterialStateProperty.all<Color?>(Colors.green),
+    ),
+    cardTheme: CardThemeData(color: Colors.grey.shade900),
+    highlightColor: Colors.transparent,
+    splashColor: Colors.transparent,
     brightness: Brightness.dark,
     primaryColor: Colors.black54,
- //Searchbar text color
-   primaryColorDark: Colors.black87,
+    //Searchbar text color
+    primaryColorDark: Colors.black87,
     scaffoldBackgroundColor: Colors.grey.shade900,
     textTheme: TextTheme(
       titleSmall: TextStyle(
@@ -47,6 +57,5 @@ class MovieTheme {
       fillColor: Colors.grey.shade100,
       hintStyle: TextStyle(color: Colors.grey),
     ),
- 
   );
 }

@@ -23,10 +23,11 @@ class MovieDrawer extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w500,
+                        color: Colors.white,
                       ),
                     ),
                   ),
-                  Text('@Kilo532'),
+                  Text('@Kilo532', style: TextStyle(color: Colors.white)),
                 ],
               ),
             ),
@@ -40,6 +41,7 @@ class MovieDrawer extends StatelessWidget {
                     leading: Icon(Icons.settings),
                     title: Text('Settings'),
                     onTap: () {
+                      Navigator.pop(context);
                       Navigator.push(
                         context,
                         MaterialPageRoute(

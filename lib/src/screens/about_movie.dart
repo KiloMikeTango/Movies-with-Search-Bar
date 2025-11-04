@@ -17,7 +17,7 @@ class AboutMovie extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           appBarTitle!,
-          style: TextStyle(fontSize: 18.5, fontWeight: FontWeight.w500),
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
@@ -30,12 +30,12 @@ class AboutMovie extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.only(
-                left: 25.0,
-                right: 25,
+                left: 15.0,
+                right: 15,
                 top: 20,
                 bottom: 17,
               ),
-              child: Text(description!),
+              child: Text(description!, style: TextStyle(fontSize: 18.5)),
             ),
           ],
         ),
